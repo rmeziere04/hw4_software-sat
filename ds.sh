@@ -1,14 +1,14 @@
 #!/bin/bash
 
 if [[ $# -gt 1 ]]; then
-echo "Error: too many arguments" >&2
+echo "Error: too many arguments"
 exit 1
 fi
 
 dir=${1:-.}
 
 if [[ ! -d "$dir" ]]; then
-echo "Error: '$dir' is not a directory" >&2
+echo "Error: '$dir' is not a directory"
 exit 1
 fi
 

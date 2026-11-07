@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $# -ne 2 ]]; then
-    echo "Usage: $0 number file" >&2
+    echo "Error: kopf.sh needs two arguments"
     exit 1
 fi
 
@@ -9,7 +9,7 @@ num=$1
 file=$2
 
 if [[ ! -f "$file" ]]; then
-    echo "Error: '$file' is not a regular file." >&2
+    echo "Error: '$file' is not a regular file."
     exit 1
 fi
 
